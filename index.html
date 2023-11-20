@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>FAQ Page</title>
+  </head>
+  <body>
+    <div class="faq-container">
+      <h1 class="faq-container__title">Perguntas Frequentes</h1>
+      <section class="faq-container__questions">
+        <img
+          src="/images/faq.png"
+          alt="FAQ illustração - uma lupa com um balão de texto contendo o texto 'FAQ'"
+          class="faq-container__img"
+        />
+        <ul class="faq-container__list"></ul>
+      </section>
+    </div>
+    <template id="question-card">
+      <li class="faq-container__question-card">
+        <h3 class="faq-container__question">
+          <span class="faq-container__question-text"></span>
+          <img
+            class="faq-container__icon"
+            src="/images/arrow.svg"
+            alt="Seta para baixo"
+          />
+        </h3>
+
+        <p class="faq-container__answer"></p>
+      </li>
+    </template>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
